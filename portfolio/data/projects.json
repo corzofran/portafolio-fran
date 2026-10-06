@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "layout": "featured",
+    "tag": "Destacado • Google Play",
+    "nombre": "HomeMatch AI",
+    "descripcion": "Aplicación móvil de bienes raíces enfocada en el mercado de Chiapas. Integra filtrado colaborativo con K-Means y búsqueda semántica con TF-IDF para recomendaciones de vivienda precisas.",
+    "tecnologias": ["Flutter", "FastAPI", "PostgreSQL", "scikit-learn"],
+    "caracteristicas": [
+      "Algoritmos de ML para recomendación de inmuebles.",
+      "Backend de alta velocidad con FastAPI y PostgreSQL.",
+      "Publicada e instalable en dispositivos Android."
+    ],
+    "url": null
+  },
+  {
+    "id": 2,
+    "layout": "medium",
+    "tag": "SaaS / Web",
+    "nombre": "Runners SaaS",
+    "descripcion": "Plataforma web integral para la gestión de equipos de atletismo, control de marcas y planes de entrenamiento individualizados.",
+    "tecnologias": ["Next.js", "Express", "PostgreSQL"],
+    "caracteristicas": [],
+    "url": null
+  },
+  {
+    "id": 3,
+    "layout": "medium",
+    "tag": "Automatización",
+    "nombre": "Bots SIGA",
+    "descripcion": "Sistema de automatización para tareas administrativas de educación en Chiapas, reduciendo horas de trabajo manual mediante web scraping robusto.",
+    "tecnologias": ["Python", "Playwright", "Google Sheets API"],
+    "caracteristicas": [],
+    "url": null
+  },
+  {
+    "id": 4,
+    "layout": "github",
+    "tag": "Más Proyectos",
+    "nombre": "Ecosistema en GitHub",
+    "descripcion": "CaféGuardián (Detección de plagas con CNN), SwarmOS (Drones sin GPS), GraduTech Pro y MercaGen.",
+    "tecnologias": [],
+    "caracteristicas": [],
+    "url": "https://github.com/corzofran"
+  },
+  {
+    "id": 5,
+    "layout": "small",
+    "tag": "",
+    "nombre": "CaféGuardián",
+    "descripcion": "Visión por computadora (CNN + NLP) para detectar enfermedades en cultivos de café en Chiapas.",
+    "tecnologias": ["Python", "TensorFlow"],
+    "caracteristicas": [],
+    "url": null
+  },
+  {
+    "id": 6,
+    "layout": "small",
+    "tag": "",
+    "nombre": "SwarmOS",
+    "descripcion": "Sistema de navegación en enjambre para drones operando en entornos sin señal GPS.",
+    "tecnologias": ["Python", "Sistemas Distribuidos"],
+    "caracteristicas": [],
+    "url": null
+  }
+]

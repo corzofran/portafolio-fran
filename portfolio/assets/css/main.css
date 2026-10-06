@@ -1,0 +1,23 @@
+/* Punto de entrada de estilos: el orden importa (base -> layout -> componentes -> secciones) */
+
+/* Base */
+@import url("base/variables.css");
+@import url("base/reset.css");
+@import url("base/accessibility.css");
+
+/* Layout */
+@import url("layout/header.css");
+@import url("layout/section.css");
+@import url("layout/footer.css");
+
+/* Componentes */
+@import url("components/buttons.css");
+@import url("components/progress-bar.css");
+@import url("components/toast.css");
+
+/* Secciones */
+@import url("sections/hero.css");
+@import url("sections/projects.css");
+@import url("sections/stack.css");
+@import url("sections/about.css");
+@import url("sections/contact.css");

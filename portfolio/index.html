@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francisco Rafael Corzo Pérez | Ingeniero de Software</title>
+  <meta name="description" content="Portafolio profesional de Francisco Rafael Corzo Pérez. Estudiante de Ingeniería de Software en la UPChiapas, desarrollador Full-Stack, Flutter & Python.">
+  <meta name="theme-color" content="#0C171C">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Aplica el tema guardado antes del primer pintado (evita parpadeo) -->
+  <script src="assets/js/theme-init.js"></script>
+</head>
+<body>
+
+  <!-- Barra de progreso superior con corredor de atletismo -->
+  <div class="runner-progress-container" aria-hidden="true">
+    <div class="runner-progress-bar" id="progressBar">
+      <div class="runner-icon"></div>
+    </div>
+  </div>
+
+  <!-- Navegación Principal -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">FRANCISCO<span>CORZO</span></a>
+      
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#stack" class="nav-link">Stack</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-theme" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <svg id="themeIcon" aria-hidden="true" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+          <svg aria-hidden="true" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="track-background" aria-hidden="true">
+        <div class="track-lane"></div>
+        <div class="track-lane"></div>
+        <div class="track-lane"></div>
+        <div class="track-lane"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>9.º Semestre • UPChiapas</span>
+        </div>
+
+        <h1 class="hero-title">Ingeniero de Software & Atleta de Alto Rendimiento.</h1>
+        
+        <p class="hero-description">
+          Soy <strong>Francisco Rafael Corzo Pérez</strong>. Construyo software robusto con Flutter, Python y FastAPI. Lidero atletas en <em>Runners En Proceso</em> y optimizo procesos administrativos y educativos en Chiapas.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#contacto" class="btn-primary">
+            Iniciar Conversación
+            <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+          <a href="https://github.com/corzofran" target="_blank" rel="noopener" class="btn-secondary">
+            GitHub
+            <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS (BENTO GRID) -->
+    <section id="proyectos" class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">Soluciones de software de impacto real, inteligencia artificial y automatización.</p>
+      </div>
+
+      <div class="bento-grid" id="projectsGrid">
+        <!-- 1. HomeMatch AI (Destacado Grande) -->
+        <article class="bento-card bento-featured">
+          <div>
+            <span class="project-tag">Destacado • Google Play</span>
+            <h3 class="project-title">HomeMatch AI</h3>
+            <p class="project-desc">
+              Aplicación móvil de bienes raíces enfocada en el mercado de Chiapas. Integra filtrado colaborativo con K-Means y búsqueda semántica con TF-IDF para recomendaciones de vivienda precisas.
+            </p>
+            <ul class="tech-stack-list">
+              <li class="tech-pill">Flutter</li>
+              <li class="tech-pill">FastAPI</li>
+              <li class="tech-pill">PostgreSQL</li>
+              <li class="tech-pill">scikit-learn</li>
+            </ul>
+          </div>
+          <div class="feature-box">
+            <p class="feature-box__title">Características clave:</p>
+            <ul class="feature-box__list">
+              <li>Algoritmos de ML para recomendación de inmuebles.</li>
+              <li>Backend de alta velocidad con FastAPI y PostgreSQL.</li>
+              <li>Publicada e instalable en dispositivos Android.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 2. Runners SaaS -->
+        <article class="bento-card bento-medium">
+          <div>
+            <span class="project-tag">SaaS / Web</span>
+            <h3 class="project-title">Runners SaaS</h3>
+            <p class="project-desc">Plataforma web integral para la gestión de equipos de atletismo, control de marcas y planes de entrenamiento individualizados.</p>
+          </div>
+          <ul class="tech-stack-list">
+            <li class="tech-pill">Next.js</li>
+            <li class="tech-pill">Express</li>
+            <li class="tech-pill">PostgreSQL</li>
+          </ul>
+        </article>
+
+        <!-- 3. Bots SIGA -->
+        <article class="bento-card bento-medium">
+          <div>
+            <span class="project-tag">Automatización</span>
+            <h3 class="project-title">Bots SIGA</h3>
+            <p class="project-desc">Sistema de automatización para tareas administrativas de educación en Chiapas, reduciendo horas de trabajo manual mediante web scraping robusto.</p>
+          </div>
+          <ul class="tech-stack-list">
+            <li class="tech-pill">Python</li>
+            <li class="tech-pill">Playwright</li>
+            <li class="tech-pill">Google Sheets API</li>
+          </ul>
+        </article>
+
+        <!-- 4. Perfil de GitHub -->
+        <article class="bento-card bento-github">
+          <div>
+            <span class="project-tag project-tag--github">Más Proyectos</span>
+            <h3 class="project-title">Ecosistema en GitHub</h3>
+            <p class="project-desc">CaféGuardián (Detección de plagas con CNN), SwarmOS (Drones sin GPS), GraduTech Pro y MercaGen.</p>
+          </div>
+          <a href="https://github.com/corzofran" target="_blank" rel="noopener" class="project-link project-link--accent">
+            Explorar repositorios
+            <svg aria-hidden="true" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </article>
+
+        <!-- 5. CaféGuardián -->
+        <article class="bento-card bento-small">
+          <h3 class="project-title project-title--sm">CaféGuardián</h3>
+          <p class="project-desc">Visión por computadora (CNN + NLP) para detectar enfermedades en cultivos de café en Chiapas.</p>
+          <ul class="tech-stack-list">
+            <li class="tech-pill">Python</li>
+            <li class="tech-pill">TensorFlow</li>
+          </ul>
+        </article>
+
+        <!-- 6. SwarmOS -->
+        <article class="bento-card bento-small">
+          <h3 class="project-title project-title--sm">SwarmOS</h3>
+          <p class="project-desc">Sistema de navegación en enjambre para drones operando en entornos sin señal GPS.</p>
+          <ul class="tech-stack-list">
+            <li class="tech-pill">Python</li>
+            <li class="tech-pill">Sistemas Distribuidos</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK TECNOLÓGICO -->
+    <section id="stack" class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Stack Tecnológico</h2>
+        <p class="section-subtitle">Herramientas y lenguajes que domino para crear soluciones de extremo a extremo.</p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-item"><span>Flutter</span></div>
+        <div class="stack-item"><span>Dart</span></div>
+        <div class="stack-item"><span>Python</span></div>
+        <div class="stack-item"><span>FastAPI</span></div>
+        <div class="stack-item"><span>PostgreSQL</span></div>
+        <div class="stack-item"><span>Playwright</span></div>
+        <div class="stack-item"><span>Next.js</span></div>
+        <div class="stack-item"><span>Express</span></div>
+        <div class="stack-item"><span>JavaScript</span></div>
+        <div class="stack-item"><span>AWS EC2</span></div>
+        <div class="stack-item"><span>Railway</span></div>
+        <div class="stack-item"><span>LaTeX</span></div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ Y LÍNEA DE TIEMPO -->
+    <section id="sobre-mi" class="section-container">
+      <div class="about-layout">
+        <div>
+          <div class="section-header">
+            <h2 class="section-title">Sobre Mí</h2>
+            <p class="section-subtitle">Disciplina atlética aplicada a la ingeniería de software.</p>
+          </div>
+          
+          <div class="about-bio">
+            <p>
+              Curso el <strong>9.º semestre de Ingeniería de Software</strong> en la Universidad Politécnica de Chiapas (UPChiapas). Mi enfoque combina el desarrollo de soluciones de arquitectura limpia con la resolución de problemas locales mediante tecnología.
+            </p>
+            <p>
+              Soy representante y corredor del equipo de atletismo <strong>"Runners En Proceso"</strong>, integrado por 25 atletas en Chiapa de Corzo. Aplico la constancia y el trabajo en equipo del deporte directo en el código.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="timeline-heading">Trayectoria & Experiencia</h3>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">10 al 28 de agosto de 2026</div>
+              <div class="timeline-role">Estancia I • Sistema de Gestión de Permisos</div>
+              <div class="timeline-org">UPChiapas</div>
+              <p class="timeline-desc">Diseño y desarrollo del sistema institucional para automatización y control de solicitudes de permisos.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Actualidad</div>
+              <div class="timeline-role">Apoyo Administrativo & Automatización</div>
+              <div class="timeline-org">SIGA (Programa de Educación en Chiapas)</div>
+              <p class="timeline-desc">Desarrollo de bots con Python y Playwright para optimización de procesos de datos administrativos.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Liderazgo</div>
+              <div class="timeline-role">Representante de Atletismo</div>
+              <div class="timeline-org">Runners En Proceso (Chiapa de Corzo)</div>
+              <p class="timeline-desc">Gestión y coordinación de un grupo de 25 atletas, eventos deportivos y desarrollo de software para el equipo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-subtitle">¿Tienes un proyecto en mente o quieres colaborar? Hablemos.</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-direct">
+          <div class="contact-item">
+            <div class="contact-info">
+              <span class="contact-label">Correo Electrónico</span>
+              <span class="contact-value">corzofrancisco9@gmail.com</span>
+            </div>
+            <button class="btn-copy" type="button" data-copy="corzofrancisco9@gmail.com" data-copy-message="Correo copiado al portapapeles">Copiar</button>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-info">
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">+52 961 971 0345</span>
+            </div>
+            <button class="btn-copy" type="button" data-copy="9619710345" data-copy-message="Teléfono copiado al portapapeles">Copiar</button>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/corzofran</span>
+            </div>
+            <button class="btn-copy" type="button" data-copy="https://github.com/corzofran" data-copy-message="Enlace de GitHub copiado">Copiar</button>
+          </div>
+        </div>
+
+        <form class="contact-form" id="whatsappForm">
+          <div class="form-group">
+            <label for="nameInput">Tu Nombre</label>
+            <input type="text" id="nameInput" class="form-control" placeholder="Ej. Ana Gómez" required>
+          </div>
+
+          <div class="form-group">
+            <label for="messageInput">Mensaje</label>
+            <textarea id="messageInput" class="form-control" placeholder="Escribe tu mensaje o propuesta..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-primary--block">
+            Enviar Mensaje por WhatsApp
+            <svg aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>© 2026 Francisco Rafael Corzo Pérez. Todos los derechos reservados.</p>
+      <p>UPChiapas • Chiapas, México</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notificación -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts (defer: se ejecutan tras parsear el HTML, en orden) -->
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/modules/api-client.js" defer></script>
+  <script src="assets/js/modules/toast.js" defer></script>
+  <script src="assets/js/modules/clipboard.js" defer></script>
+  <script src="assets/js/modules/theme.js" defer></script>
+  <script src="assets/js/modules/nav.js" defer></script>
+  <script src="assets/js/modules/scroll-progress.js" defer></script>
+  <script src="assets/js/modules/projects.js" defer></script>
+  <script src="assets/js/modules/contact-form.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
